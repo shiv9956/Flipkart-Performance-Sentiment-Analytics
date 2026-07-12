@@ -44,22 +44,21 @@ By running structured SQL queries and data engineering workflows on over **66,00
 Flipkart-Performance-Sentiment-Analytics/
 │
 ├── data/
-│   ├── uncleaned.csv                     # Raw e-commerce dataset
+│   ├── flipkart.csv                     # Raw e-commerce dataset
 │   └── flipkart-cleaned.csv             # Processed & feature-engineered dataset
 │
 ├── notebooks/
-│   └── eda_and_data_cleaning.ipynb      # Python data preprocessing & cleaning pipeline
+│   └── flipkart_sales_analysis.ipynb      # Python data preprocessing & cleaning pipeline
 │
 ├── sql/
-│   ├── schema.sql                       # Database setup & data load scripts
-│   └── business_queries.sql             # 10 core analytical MySQL queries
+│   ├── Flipkart Performance & Sentiment Analytics (FPSA) mysql queries.sql                       # Database setup & data load scripts
+│   └── Flipkart Performance & Sentiment Analytics (FPSA) mysql-answers.sql             # answers to 10 core business questions
 │
 ├── dashboards/
-│   └── customer_behavior_dashboard.pbix # Interactive Power BI report
+│   └── fpsa_dashboard.pbix # Interactive Power BI report
 │
 ├── docs/
 │   ├── Business_Problem_Statement.pdf   # Formal business problem documentation
-│   └── Business_Problem_Statement.tex   # LaTeX source code for the document
-│
-├── .gitignore                           # Standard Git ignore file
+│   └── Flipkart Data Analytics.pptx                        # ppt with complete report
+│                           
 └── README.md                            # Comprehensive project documentation
