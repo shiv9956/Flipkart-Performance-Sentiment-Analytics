@@ -1,4 +1,5 @@
-# Flipkart-Performance-Sentiment-Analytics
+# Flipkart Performance & Sentiment Analytics (FPSA)
+
 End-to-end MySQL analytics on 66k+ Flipkart products analyzing revenue trends, pricing strategies, customer sentiment, and quality risks.
 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-shiv9956%2FFlipkart--Performance--Sentiment--Analytics-blue?style=for-the-badge&logo=github)](https://github.com/shiv9956/Flipkart-Performance-Sentiment-Analytics)
@@ -43,15 +44,22 @@ By running structured SQL queries and data engineering workflows on over **66,00
 Flipkart-Performance-Sentiment-Analytics/
 │
 ├── data/
-│   ├── flipkard.csv                  # Raw dataset
-│   └── flipkart-cleaned.csv          # Processed & cleaned CSV dataset
+│   ├── uncleaned.csv                     # Raw e-commerce dataset
+│   └── flipkart-cleaned.csv             # Processed & feature-engineered dataset
+│
+├── notebooks/
+│   └── eda_and_data_cleaning.ipynb      # Python data preprocessing & cleaning pipeline
 │
 ├── sql/
-│   ├── schema.sql                    # MySQL Table creation & LOAD DATA scripts
-│   └── business_queries.sql          # 10 core analytical SQL queries
+│   ├── schema.sql                       # Database setup & data load scripts
+│   └── business_queries.sql             # 10 core analytical MySQL queries
+│
+├── dashboards/
+│   └── customer_behavior_dashboard.pbix # Interactive Power BI report
 │
 ├── docs/
-│   └── Business_Problem_Statement.pdf # Detailed problem statement & deliverables
+│   ├── Business_Problem_Statement.pdf   # Formal business problem documentation
+│   └── Business_Problem_Statement.tex   # LaTeX source code for the document
 │
-├── README.md                         # Project documentation
-└── .gitignore                        # Standard git ignore file
+├── .gitignore                           # Standard Git ignore file
+└── README.md                            # Comprehensive project documentation
